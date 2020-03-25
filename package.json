@@ -1,13 +1,14 @@
 {
-    "name": "docker-nodejs",
-    "private": true,
-    "version": "0.0.1",
-    "description": "NodeJS example",
-    "author": "Gonzalo",
-    "scripts": {
-      "start": "node index.js"
-    },
-    "dependencies": {
-      "express": "*"
-    }
+  "name": "docker-nodejs",
+  "private": true,
+  "version": "0.0.1",
+  "description": "NodeJS example",
+  "author": "Marioli Montenegro",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha index.test.js"
+  },
+  "dependencies": {
+    "express": "*"
   }
+}

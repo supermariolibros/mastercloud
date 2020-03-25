@@ -1,8 +1,9 @@
+sudo: required
 services:
-    - docker
-  script:
-    - docker build -t cloud .
-  after_success:
-    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - docker tag cloud $DOCKER_USER/masterlemoncode_cloud
-    - docker push $DOCKER_USER/masterlemoncode_cloud
+ - docker
+script:
+ - docker build -t lemoncodepracticacloudmarioli .
+after_success:
+ - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+ - docker tag lemoncodepracticacloudmarioli $DOCKER_USER/lemoncodepracticacloudmarioli
+ - docker push $DOCKER_USER/lemoncodepracticacloudmarioli
